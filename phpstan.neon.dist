@@ -1,0 +1,9 @@
+parameters:
+  level: 9
+  paths:
+    - src
+    - test
+  checkMissingIterableValueType: true
+  ignoreErrors:
+    - '/Call to an undefined method BeBat\\Verify\\API\\Value::/'
+    - '/Access to an undefined property BeBat\\Verify\\API\\Value::/'
