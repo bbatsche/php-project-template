@@ -1,3 +1,4 @@
+<!-- omit in toc -->
 # <Project Name>
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/bebat/<package>.svg?style=flat-square)](https://packagist.org/packages/bebat/<package>)
