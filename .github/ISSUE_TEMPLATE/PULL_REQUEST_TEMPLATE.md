@@ -25,6 +25,7 @@
 ## Contribution Checklist
 
 - [ ] The contents of this pull request are my own work and may be distributed under the terms of the project license
+- [ ] I have read and agree to the Contributing guidelines and the Code of Conduct
 - [ ] All new changes are covered by tests
 - [ ] All previous tests and checks are passing
 - [ ] I have included documentation about this change

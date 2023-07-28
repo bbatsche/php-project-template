@@ -19,6 +19,10 @@ There are a few things to do when creating a new PHP project from this repositor
      - Replace `<package>` with Composer package name
      - Replace `<repo>` with GitHub repository name
      - You should fill in the rest of the `README.md` with any documentation or instructions the project needs.
+   - `CONTRIBUTING.md`
+     - Fill in `<Project Name>`
+     - Replace `<package>` with Composer package name
+     - Replace `<repo>` with GitHub repository name
    - `CHANGELOG.md`
      - Replace the `<repo>` with GitHub repository name
    - `LICENSE`
@@ -27,6 +31,12 @@ There are a few things to do when creating a new PHP project from this repositor
      - Fill in `<testsuite name="">`
    - `.gitattributes-init`
      - Rename to `.gitattributes`
+   - `.github/ISSUE_TEMPLATE/bug_report.yml`
+     - Fill in `<Project Name>`
+   - `.github/ISSUE_TEMPLATE/feature_request.yml`
+     - Fill in `<Project Name>`
+   - `.github/ISSUE_TEMPLATE/PULL_REQUEST_TEMPLATE.md`
+     - Fill in `<Project Name>`
    - `src/.gitkeep`
      - Delete this file
    - `test/.gitkeep`
