@@ -12,6 +12,9 @@ indent_size = 4
 [*.{xml,xml.dist}]
 indent_size = 4
 
+[*.{yml,yaml}]
+indent_size = 2
+
 [*.{neon,neon.dist}]
 indent_size = 2
 
