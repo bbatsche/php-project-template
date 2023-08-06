@@ -97,7 +97,7 @@ If you have an idea on how to improve <Project Name> we are eager to hear it! We
 ## Contributing Code
 
 > ### Notice <!-- omit in toc -->
-> When contributing to this project, you affirm that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project's [license](LICENSE).
+> When contributing to this project, you affirm that you have authored 100% of the content, that you have the necessary rights to the content, and that the content you contribute may be provided under the project's [license](LICENSE).
 
 We are thrilled you would like to contribute code to <Project Name>! This is truly one of the best ways to help support our project and the open source community as a whole. Before writing code for the library, we ask that you consider a few things.
 
@@ -131,6 +131,15 @@ In order to ensure code quality and consistency, <Project Name> has various styl
 - `test:phpunit` &mdash; Run PHPUnit tests on code
 - `test:coverage` &mdash; Run PHPUnit tests and generate a coverage report
 - `test` &mdash; Run `style:check`, `test:static`, and `test:phpunit` in sequence
+
+<Project Name> uses [CaptainHook](http://captainhook.info/) to manage git hooks during development. Whenever you create a commit, CaptainHook will automatically lint your code and run through `composer test` for you. *Do not skip or disable the git hooks unless you have a very good reason for doing so!*
+
+Finally, there are two additional tools meant to keep dependencies well defined:
+
+- `vendor/bin/composer-require-checker` &mdash; Check that all dependencies are explicitly defined in `composer.json`
+- `composer normalize` &mdash; Make sure `composer.json` is in a consistent order and format
+
+If you modify `composer.json` make sure to run `composer normalize` before pushing your code to GitHub. Both these tools will be run against every pull request before merging.
 
 ### Creating a Pull Request
 
