@@ -112,6 +112,7 @@ There is minimal tooling required to contribute to <Project Name>. In general th
 - PHP 7.4 or greater
 - Git
 - Composer
+- A coverage driver such as [Xdebug](https://xdebug.org/) or [PCOV](https://github.com/krakjoe/pcov)
 - A text editor and terminal of your choice.
 
 To get started, follow the steps below:
@@ -132,7 +133,7 @@ In order to ensure code quality and consistency, <Project Name> has various styl
 - `test:coverage` &mdash; Run PHPUnit tests and generate a coverage report
 - `test` &mdash; Run `style:check`, `test:static`, and `test:phpunit` in sequence
 
-<Project Name> uses [CaptainHook](http://captainhook.info/) to manage git hooks during development. Whenever you create a commit, CaptainHook will automatically lint your code and run through `composer test` for you. *Do not skip or disable the git hooks unless you have a very good reason for doing so!*
+<Project Name> uses [CaptainHook](http://captainhook.info/) to manage git hooks during development. Whenever you create a commit, CaptainHook will automatically lint your code and run through `composer test` for you. In addition, before pushing your code Captainhook will check the test coverage to ensure it is over 80%. *Do not skip or disable the git hooks unless you have a very good reason for doing so!*
 
 Finally, there are two additional tools meant to keep dependencies well defined:
 

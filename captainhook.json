@@ -1,4 +1,22 @@
 {
+    "pre-push": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "composer test:coverage",
+                "options": [],
+                "conditions": []
+            },
+            {
+                "action": "\\CaptainHook\\App\\Hook\\PHP\\Action\\TestCoverage",
+                "options": {
+                    "minCoverage": 80,
+                    "cloverXml": "coverage.xml"
+                }
+            }
+        ]
+    },
+
     "pre-commit": {
         "enabled": true,
         "actions": [
